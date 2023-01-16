@@ -1,0 +1,74 @@
+@import './../../../styles/colors.scss';
+
+body {
+  margin: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $main_red_color; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba($main_red_color, 0.7); 
+}
+
+.app-wrapper {
+  margin: 0px;
+  padding: 0px;
+
+  .header {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $main_red_color;
+    padding: 0 10%;
+    
+    &-logo {
+      font-size: 2rem;
+      color: white;
+      font-weight: bold;
+    }
+
+    &-nav {
+
+      &-ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: baseline;
+
+        &-li {
+          margin-left: 3rem;
+          a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #fcb8d2;
+          }
+          a:hover,
+          a:active,
+          a.active {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .container {
+    width: 100%;
+    padding: 35px;
+  }
+}

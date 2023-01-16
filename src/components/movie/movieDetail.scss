@@ -1,0 +1,63 @@
+@import "./../../styles/colors.scss";
+
+.movie-wrapper {
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .movie-image-item {
+    max-height: 500px;
+  }
+
+  .movie-info {
+    max-width: 620px;
+
+    &-desc {
+      color: var(--gray-x);
+      font-size: var(--fs-9);
+      font-weight: var(--fw-500);
+      line-height: 1.8;
+      margin-bottom: 40px;
+    }
+
+    .add-to-whislist {
+      padding: 15px;
+      border: none;
+      font-size: 18px;
+      font-style: bold;
+      font-family: inherit;
+    }
+  }
+
+  .movie-additional-info {
+    font-size: var(--fs-5);
+    color: var(--citrine);
+    font-weight: var(--fw-700);
+  }
+}
+
+.category-action {
+  color: $action_category_color !important;
+  font-family: "Georgia" !important;
+  button {
+    background: rgba($action_category_color, 0.2);
+  }
+}
+
+.category-horror {
+  color: $horror_category_color !important;
+  font-family: "Trebuchet MS" !important;
+  button {
+    background: rgba($horror_category_color, 0.2);
+  }
+}
+
+.category-animation {
+  color: $animation_category_color !important;
+  font-family: "Brush Script MT" !important;
+}
